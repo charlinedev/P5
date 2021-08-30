@@ -1,0 +1,31 @@
+
+
+.navbar {
+background-color:#F3E9F1;
+}
+
+.prez {
+    font-family: "belligerent";
+    background-color: #E9DAF9;
+}
+
+nav .icon {
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    list-style-type: none;
+    font-size: 20px;
+    width: 20%;
+}
+
+.navbar-toggler {
+background-color: white;
+}
+
+.btn {
+    background-color: #bf3fbf;
+}
+
+footer {
+ background-color: #F3E9F1;
+}

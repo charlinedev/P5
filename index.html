@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link href="./frontend/style.css" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>Accueil - Orinoco</title>
+    <meta name="description" content="Orinoco le site spécialisé en appareils photo vintage">
+
+</head>
+
+<body>
+
+<!--Header-->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid mx-1 mx-lg-3">
+        <a href="index.html"><img class="img-fluid mx-4 mx-lg-0 mr-auto w-25" src="backend/images/Logo_Orinoco.png"  alt="logo orinoco"/></a>
+        <ul class="icon">
+            <li class="icon__desc align-middle"><a href=""><i class="fas fa-user-circle"></i></a></li>
+            <li class="icon__desc align-middle"><a href="cart.html"><i class="fas fa-cart-arrow-down"></i><div class="item__number"></div></a></li>
+          </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4 " id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="">Nos objectifs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Description -->
+<main>
+    <div class="p-5 mx-5 mt-4 prez">
+        <h1 class="text-center fs-1 text-dark">Bienvenue chez Orinoco</h1>
+        <p class="text-center text-dark">Retrouvez notre sélection d'appareils de collection ainsi que leurs objectifs</p>
+    </div>
+</main>
+
+<!-- Products -->
+<section class="mx-3">
+    <div class="row mx-3 my-3" id="Cards">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4">
+    <ul class="list-inline text-center">
+        <li class="list-inline-item"><a href="index.html" title=""></a></li>
+        <li class="list-inline-item"><a href="mailto:orinoco@info.com?subject=Contact" title="Contact">Contactez-nous</a></li>
+        <li class="list-inline-item"><a href="#" title="Mentions Légales">Mentions Légales</a></li>
+    </ul>
+    <p class="copyright text-center">Orinoco © 2021</p>
+</footer>
+
+<script src="./frontend/js/formules.js"></script>
+<script src="./frontend/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+
+
+</body>
+</html>

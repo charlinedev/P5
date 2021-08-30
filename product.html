@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP + CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link href="./frontend/style.css" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>Produit - Orinoco</title>
+    <meta name="description" content="Orinoco le site spécialisé en appareils photo vintage">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid mx-1 mx-lg-3">
+        <a class= mx-0 href="index.html"><img class="img-fluid mx-1 mx-lg-0 mr-0 w-25" src="backend/images/Logo_Orinoco.png"  alt="logo orinoco"/></a>
+        <ul class="icon">
+            <li class="icon__desc"><a href=""><i class="fas fa-user-circle"></i></a></li>
+            <li class="icon__desc align-middle"><a href="cart.html"><i class="fas fa-cart-arrow-down"></i><div class="item__number"></div></a></li>
+          </ul>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4 " id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="cart.html" id="basketPreview">Panier</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="mx-4 my-6">
+    <div class="card px-0 mx-3 my-4 border-0">
+        <div class="row g-0 shadow p-3" id="product">
+            <div class="col-12">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-7" id="productImage">
+                        </div>
+                        <div class="col-6 col-sm-7 mt-3" id="productName">
+                        </div>
+                        <div class="col-6 col-sm-4 text-end mt-3" id="productPrice">
+                        </div>
+                    </div>
+                    <select id="option" class="form-select mb-3" aria-label="choisir la version">
+                    </select>
+                    <div class="mb-3" id="productDescription">
+                    </div>
+                    <div class="row">
+                        <div class="col-5 col-sm-3 col-md-5 col-lg-4 col-xl-3 my-auto">
+                            <p>Quantité :</p>
+                        </div>
+                        <div class="col-4 col-sm-3 col-md-4 col-lg-3 ">
+                            <select id="quantity" class="form-select mb-3" aria-label="Quantité">
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btnAddBasket" class="btn btn-secondary" >Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4">
+    <ul class="list-inline text-center">
+        <li class="list-inline-item"><a href="index.html" title="Accueil">Accueil</a></li>
+        <li class="list-inline-item"><a href="mailto:orinoco@mail.com?subject=Contact" title="Contact">Contactez-nous</a>
+        </li>
+        <li class="list-inline-item"><a href="#" title="Mentions Légales">Mentions Légales</a></li>
+    </ul>
+    <p class="copyright text-center">Orinoco © 2021</p>
+</footer>
+<script src="./frontend/js/formules.js"></script>
+<script src="./frontend/js/product.js"></script>
+<script src="https://kit.fontawesome.com/fd986726cd.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+
+
+</body>
+</html>
