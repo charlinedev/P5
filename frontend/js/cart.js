@@ -2,10 +2,10 @@
 const Form = document.getElementById("form");
 const emptyBasket = document.getElementById("emptyBasket");
 
-// indique que le panier est vide
+// Si pas de qté, afficher que le panier est vide
 if (basket.length < 1) {
     form.classList.add("d-none");
-    // sinon affiche le tableau avec les produits
+// sinon afficher le tableau avec les produits
 } else {
     form.classList.add("d-none");
     emptyBasket.classList.add("d-none");
@@ -27,7 +27,7 @@ for (add of buttonAdd) {
     add.addEventListener("click", addProduct);
 }
 
-//supprimer un produit
+//fonction: suppression de la qté d'un produit
 function minusProduct(event) {
     const index = event.target.getAttribute("data-index");
     if (basket[index].quantity > 1) {
@@ -62,7 +62,6 @@ totalPrice();
     const checkBox = document.getElementById("invalidCheck2");
 
     order.addEventListener("click", (event) => {
-        // on prépare les infos pour l'envoie en POST
         let contact = {
             firstName: document.getElementById("firstName").value,
             lastName: document.getElementById("lastName").value,
@@ -70,7 +69,6 @@ totalPrice();
             city: document.getElementById("city").value,
             email: document.getElementById("email").value,
         };
-        // on valide que le formulaire soit correctement rempli
         if (
             (regexMail.test(contact.email) == true) &
             (regexName.test(contact.firstName) == true) &
@@ -85,7 +83,6 @@ totalPrice();
                 products.push(listId.id);
             }
 
-            // on envoie en POST
             fetch("https://teddies-api.herokuapp.com/api/cameras/order", {
                 method: "POST",
                 headers: {
