@@ -5,30 +5,30 @@ const idProduct = search.get("_id");
 const newUrl = `http://localhost:3000/api/cameras/${idProduct}`;
 
 fetch(newUrl)
-    .then((response) => response.json())
-    .then((data) => {
-        const product = data;
-        Cam(data);
-
-        // fonction: Affichage du produit
-        function Cam (product) {
-
-            const selectionProductImage = document.getElementById("productImage");
-            selectionProductImage.innerHTML += `
+  .then((response) => response.json())
+  .then((data) => {
+    const product = data;
+    Cam(data);
+    
+    // fonction: Affichage du produit
+    function Cam (product) {
+      
+      const selectionProductImage = document.getElementById("productImage");
+      selectionProductImage.innerHTML += `
         <img src="${product.imageUrl}" class="img-fluid" alt="${product.name}">
         `;
             const selectionProductName = document.getElementById("productName");
-            selectionProductName.innerHTML += `
-        <h5 class="card-title">${product.name}</h5>
-        `;
+      selectionProductName.innerHTML += `
+      <h5 class="card-title">${product.name}</h5>
+      `;
             const selectionProductPrice = document.getElementById("productPrice");
-            selectionProductPrice.innerHTML += `
-         <h5 class="card-title">${reducePrice(product.price)}</h5>
-        `;
+      selectionProductPrice.innerHTML += `
+      <h5 class="card-title">${reducePrice(product.price)}</h5>
+      `;
             const selectionProductDescription = document.getElementById("productDescription");
-            selectionProductDescription.innerHTML += `
-        <p class="card-text">${product.description}</p>
-        `;
+      selectionProductDescription.innerHTML += `
+      <p class="card-text">${product.description}</p>
+      `;
         selectLenses(product);
         }
         
